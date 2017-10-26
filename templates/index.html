@@ -1,14 +1,40 @@
-{% load staticfiles %}
+<!DOCTYPE html>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>We Make Email Delivery Easy | SendGrid</title>
-    <link type="text/css" rel="stylesheet" href="{% static "main.css" %}"/>
-  </head>
-  <body>
-    <div class="header">
+{% load i18n %}
+{% load static %}
+
+<html lang="en">
+<!--[if IE 8]> <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if IE 9]> <html class="no-js ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+ 
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="" />
+ 
+  <title>We Make Email Delivery Easy | SendGrid</title> 
+ 
+  <link href="{% static "main.css" %}" rel="stylesheet" />
+  
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <!--[if !IE]><!-->
+  <script>
+  if (/*@cc_on!@*/false && document.documentMode === 10) {
+  document.documentElement.className+=' ie10';
+  }
+  </script>
+  <!--<![endif]-->
+</head>
+
+<body>
+  <div class="header">
       <div class="header-top">
         <img src="{% static "sendgrid_logo.png" %}" style="width: 150px;" />
       </div>
@@ -41,5 +67,5 @@
         </form>
       </div>
     </div>
-  </body>
+</body>
 </html>
